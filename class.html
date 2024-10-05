@@ -1,0 +1,24 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1> about class</h1>
+        <p id="student1"></p>
+        <script>
+            class Student {
+                constructor(name,year) {
+                    this.name = name;
+                    this.year = year;
+                }
+                age(){
+                    let date= new Date();
+                    return date.getFullYear() - this.year;
+                }
+            }
+            student1 = new Student("Alesa", 2008);
+            document.getElementById("student1").innerHTML ="MY name is " + student1.name + " I born in "+
+            student1.year + "  my age is " + student1.age();
+        </script>
+    </body>
+</html>
