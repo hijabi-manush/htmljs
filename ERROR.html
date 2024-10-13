@@ -1,0 +1,18 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>error javascript</h1>
+        <p id="error_message"></p>
+        <script>
+            try { 
+                yoalert("yo guys");
+            }
+           catch(err) {
+            document.getElementById("error_message").innerHTML =err.message
+           } 
+
+        </script>
+    </body>
+</html>
