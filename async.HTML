@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h1> async and await</h1>
+        <p id="solution"></p>
+        <script>
+          async function add(a,b) {
+            var response = await a*b;
+            display(response);
+          }  
+          function display(some) {
+            document.getElementById("solution").innerHTML =some;
+          }
+          add(3,345);
+        </script>
+    </body>
+</html>
