@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <body style="background-color: black;">
+        <h1 style="color: aliceblue;" > YO GUYS</h1>
+        <h3 id="solution" style="color: aquamarine;"> </h3>
+        <h3 id="result" style="color: bisque;"></h3>
+        <script>
+            var myObj= { name:" NAME : NOWSIN NAWAR", age: 15, gender: " GENDER : female"};
+            var myJSON = JSON.stringify(myObj);
+            var newObj = JSON.parse(myJSON);
+            document.getElementById("solution").innerHTML= newObj.name +"<br>"+ "AGE:  "+newObj.age
+            +"<br>"+newObj.gender;
+
+            var myObj= { name:" NAME : ALESA FARAH", age:15, gender: " GENDER : female"};
+            var myJSON = JSON.stringify(myObj);
+            var newObj = JSON.parse(myJSON);
+            document.getElementById("result").innerHTML= newObj.name +"<br>" +"AGE: "+newObj.age 
+            +"<br>"+newObj.gender;
+        </script> 
+    </body>
+
+</html>
